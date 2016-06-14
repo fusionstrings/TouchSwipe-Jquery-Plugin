@@ -11,21 +11,22 @@
     "jquery"
   ],
   "main": "./jquery.touchSwipe.min.js",
-  "author": {
-    "name": "Matt Bryson"
-  },
-  "version": "1.6.17",
+	"author": {
+		"name": "Dilip Kr. Shukla",
+		"url": "https://github.com/fusionstrings"
+	},
+  "version": "2.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git"
+    "url": "https://github.com/fusionstrings/jquery-touchswipe.git"
   },
   "bugs": {
-    "url": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/issues"
+    "url": "https://github.com/fusionstrings/jquery-touchswipe/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.githubusercontent.com/mattbryson/TouchSwipe-Jquery-Plugin/master/LICENCE"
+      "url": "https://raw.githubusercontent.com/fusionstrings/jquery-touchswipe/master/LICENCE"
     },
     {
       "type": "GPL V2",
@@ -34,6 +35,9 @@
   ],
   "readmeFilename": "README.md",
   "homepage": "http://labs.rampinteractive.co.uk/touchSwipe/demos/",
+	"dependencies": {
+		"jquery": "^3.0.0"
+	},
   "devDependencies": {
     "docdash": "^0.3.0",
     "jsdoc": "^3.4.0",
@@ -43,5 +47,6 @@
     "docs": "jsdoc jquery.touchSwipe.js --readme README.md --destination ./docs --template node_modules/docdash --tutorials ./demos ",
     "minify": "uglifyjs jquery.touchSwipe.js --output jquery.touchSwipe.min.js --compress  --comments",
     "build": "npm run docs && npm run minify"
-  }
+  },
+  "registry": "npm"
 }
